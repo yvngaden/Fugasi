@@ -1,0 +1,558 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(photo/front.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+/*this is the the style of the navbar, everything inside the navbar*/
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgba(6,121,239,0.4);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0 0 8px 5px #ddd;
+    
+}
+
+.logo{
+    width: 150px;
+    margin-top: 5px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #E12D23;
+    transition: 0.3s ;
+}
+button{
+    border: none;
+    background:#ea1538;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.4s;
+}
+button a{
+    text-decoration: none;
+    color: white;
+
+}
+button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.active {
+    color: #ea1538;
+}
+/*the is the the Sign Up main page that the first content that  you see*/
+.main{
+    position:relative;
+    top: 100px;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url("photo/jerseys.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 8px 8px #ddd;
+    border-top: white solid 2px;
+}
+
+.jersey-sale{
+    background: rgba(35,100,236,0.3);
+    height: 200px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+}
+
+.jersey-sale h1{
+    margin: 20px;
+    color:rgb(222, 222, 222);
+    font-size: 25px;
+}
+.jersey-sale-btn{
+    justify-content: center;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: rgb(222, 222, 222);
+    font-weight: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.jersey-sale-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    
+} 
+
+
+/* this is styling for the sign up page*/
+.login{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    align-items: center;
+    background: rgba(35,100,236,0.3);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 8px #ddd;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid white;
+    background: rgba(35,100,236,0.3);
+    backdrop-filter: blur(8px);
+    width: 95%;
+    padding: 5px 10px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    color:white;
+}
+
+.login h2{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.button{
+    position:relative;
+    width:95%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #E12D23;
+    margin: 0 5px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.new{
+    position: relative;
+    text-align: center;
+    top: 55px;
+    padding: 5px;
+    color: #b5dff4;
+    font-size: 16px;
+}
+.new a {
+    text-decoration: none;
+    color: rgb(255, 255, 255,1);
+    font-size: 16px;
+}
+.new a:hover{
+    text-decoration: underline;
+}
+.forgot{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.forgot li{
+    list-style-type: none;
+}
+.forgot a{
+    text-decoration: none;
+    color: #b5dff4
+}
+.forgot a:hover{
+    color: #E12D23;
+}
+ /* this the features style*/
+.feature{
+    position: relative;
+    top: 100px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 80px;
+    height: 900px;
+    overflow: hidden;
+
+}
+
+
+/*this is the man's button */
+.male{
+    background: rgba(35,100,236,0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+    border-radius: 12px;
+    text-align: center;
+}
+.male button{
+    margin: 10px;
+}
+
+.male img{
+    width: 200px;
+}
+.male button:hover{
+    transform: scale(1);
+}
+
+
+/*this is the woman's button */
+.female{
+    background: rgba(35,100,236,0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+    border-radius: 12px;
+    text-align: center;
+}
+.female button{
+    margin-top: 10px;
+}
+.female img{
+    width: 200px;
+}
+.female button:hover{
+    transform: scale(1);
+}
+
+
+/*this is the accessories's button */
+.acs{
+    background: rgba(35,100,236,0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.acs button{
+    margin-top: 15%;
+}
+.acs img{
+    width: 200px;
+}
+
+
+
+/*this is the about me button */
+.me{
+    background: rgba(35,100,236,0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+    border-radius: 12px;
+    text-align: center;
+    height: 360px;
+}
+.me button{
+    margin-top: 15%;
+}
+.me img{
+    width: 200px;
+}
+
+
+/*footer styling start */
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    top: 100px;
+    height: 450px;
+    background: rgba(6,121,239,0.4);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    box-shadow: 0 0 8px 5px #ddd;
+    color: #b5dff4;
+    padding: 5px 5%;
+}
+
+/* this is the styling for the heading in the footer*/
+.ads{
+    margin-top: 10%;
+}
+.contact{
+    margin-top:10%;
+}
+.media{
+    margin-top: 10%;
+}
+
+
+.footer-list{
+    margin: 20px 0;
+    list-style-type:none;
+    padding: 0 5px;
+
+}
+.footer-list li{
+    padding: 3px 0;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #ddd;
+}
+.footer-list a:hover{
+    color:#E12D23
+}
+/*this is the styling for the socails and payment area in the footer */
+.socials{
+    margin-top: 10%;
+    align-items: center;
+}
+.socials h3{
+    margin: 10px 0;
+}
+.fa-brands{
+    color:white;
+    font-size: 30px;
+    margin: 10px;
+}
+.fa-brands a{
+    text-decoration: none;
+}
+.fa-brands:hover{
+    color: #E12D23;
+}
+
+.footer-logo{
+    width: 150px;
+    margin-left: 50px;
+    justify-content: center;
+}
+/*this is the tyling for the copy right at the bottom of the page*/
+.copy-right{
+    border-top: #b5dff4 solid 2px;
+    color: white;
+    position: relative;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+/*this is the styling for the coming soon area*/
+
+.soon{
+    margin-top: 200px;
+    position: relative;
+    top: auto;
+    overflow: hidden;
+    box-shadow: 0 0 8px 5px #ddd;
+    color: #b5dff4;  
+    
+}
+.soonlist{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30px;
+
+}
+.soon img{
+    width: auto;
+    height: 400px;
+}
+
+/*this is the styling for the NBA main page */
+.men-jersey-container {
+    position: relative;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.men-jersey-container h2{
+    padding: 10px;
+}
+
+
+.men-jersey-sale{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 5%;
+    justify-content: center;
+
+}
+
+.mjersey-sale{
+    width: 250px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgba(35,100,236,0.3);
+    flex-direction: column;
+    box-shadow: 0 0 8px 5px #ddd;
+    border-top: white solid 2px;
+    
+}
+.mjersey-sale img{
+    border-radius: 12px 12px 0 0;
+    height: 250px;
+    
+}
+.drs h5, h3{
+    padding: 5px;
+}
+
+.mjersey-sale:hover{
+    box-shadow: 0 0 8px 8px #ddd;
+}
+/*styling for the about page */
+
+.learn{
+    position: relative;
+    display: grid;
+    margin: 100px 10%;
+    border-radius: 12px;
+    
+}
+.learn-nba{
+    background: rgba(35,100,236,0.3);
+    margin: 20px 10px;
+    display: flex;
+    box-shadow: 0 0 8px 5px #ddd;
+    border-radius: 12px;
+
+}
+.learn-nba p{
+    padding: 0 10px;
+    color: #b5dff4;
+}
+
+.learn-nba img{
+    width: 500px;
+    border-radius: 12px 1px 0px 12px;
+}
+@media screen and (max-width:480px){
+    footer{
+        height: 700px;
+    }
+    .socials{
+        font-size: 10px;
+    }
+    .soonlist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .main {
+        margin-top: 100px;
+      }
+    .men-jersey-container{
+          margin-top: 200px;
+
+      }
+    .men-jersey-sale{
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+
+       }
+    .mjersey-sale{
+        width: 190px;
+       }
+    
+    nav {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+    nav ul{
+          display: flex;
+          flex-direction: column;
+      }
+    nav li{
+          margin: 4px 0;
+      }
+    nav button{
+          display: none;
+      }
+    .feature {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          grid-gap: 10px;
+          height: auto;
+    }
+    .soon{
+        display: none;
+    }
+    
+}
+
+@media (min-width:480px) and (max-width:750px){
+    nav button{
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    .men-jersey-sale{
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+    }
+    .mjersey-sale{
+        width: 200px;
+       }
+}
+
